@@ -1,0 +1,37 @@
+#N canvas 332 40 311 527 10;
+#X obj 97 107 bng 15 250 50 0 empty bang empty 17 7 0 10 -262144 -1
+-1;
+#X obj 98 147 bng 15 250 50 0 empty bang2 empty 17 7 0 10 -262144 -1
+-1;
+#X obj 98 190 bng 15 250 50 0 empty bang3 empty 17 7 0 10 -262144 -1
+-1;
+#X obj 98 271 bng 15 250 50 0 empty bang5 empty 17 7 0 10 -262144 -1
+-1;
+#X obj 98 231 bng 15 250 50 0 empty bang4 empty 17 7 0 10 -262144 -1
+-1;
+#X obj 98 311 bng 15 250 50 0 empty bang6 empty 17 7 0 10 -262144 -1
+-1;
+#X obj 98 348 bng 15 250 50 0 empty bang7 empty 17 7 0 10 -262144 -1
+-1;
+#X obj 16 450 outlet~;
+#X obj 98 162 bell 493.88 0.5 100 1000;
+#X obj 97 122 bell 440 0.5 100 1000;
+#X obj 98 287 bell 659.25 0.5 100 1000;
+#X obj 98 326 bell 739.99 0.5 100 1000;
+#X obj 98 246 bell 587.33 0.5 100 1000;
+#X obj 98 205 bell 554.37 0.5 100 1000;
+#X obj 98 363 bell 830.61 0.5 100 1000;
+#X connect 0 0 9 0;
+#X connect 1 0 8 0;
+#X connect 2 0 13 0;
+#X connect 3 0 10 0;
+#X connect 4 0 12 0;
+#X connect 5 0 11 0;
+#X connect 6 0 14 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 0;
+#X connect 11 0 7 0;
+#X connect 12 0 7 0;
+#X connect 13 0 7 0;
+#X connect 14 0 7 0;

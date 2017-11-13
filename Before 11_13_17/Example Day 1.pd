@@ -1,0 +1,12 @@
+#N canvas 179 129 496 407 10;
+#X obj 64 285 print;
+#X msg 60 222 Join Student AES. It's Awesome!!;
+#X obj 59 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 59 124 metro 500;
+#X obj 62 54 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;

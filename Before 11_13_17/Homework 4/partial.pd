@@ -1,0 +1,19 @@
+#N canvas 587 329 461 504 10;
+#X obj 45 113 osc~ \$1;
+#X obj 45 374 *~;
+#X obj 151 290 vline~;
+#X obj 45 395 outlet~;
+#X text 25 23 \$1: freq \; \$2: peak amp \; \$3: attack time \; \$4:
+decay time;
+#X msg 151 257 0 \, \$1 \$2 0 \, 0 \$3 \$2;
+#X obj 151 147 inlet;
+#X obj 151 311 *~;
+#X obj 151 226 pack \$2 \$3 \$4;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 7 0;
+#X connect 2 0 7 1;
+#X connect 5 0 2 0;
+#X connect 6 0 8 0;
+#X connect 7 0 1 1;
+#X connect 8 0 5 0;

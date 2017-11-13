@@ -1,0 +1,95 @@
+#N canvas 46 23 1074 694 10;
+#X obj 38 202 hsl 128 60 0 127 0 0 empty empty empty -2 -8 0 10 -4032
+-1 -1 12700 1;
+#X floatatom 457 125 5 0 0 0 - - Billy, f 5;
+#X floatatom 151 415 5 0 0 0 - - Hasselhoff, f 5;
+#X obj 68 359 vradio 15 1 0 8 empty Billy empty 0 -8 0 10 -159808 -1
+-1 219;
+#X obj 707 234 hradio 8 1 0 20 empty Sandy empty 0 -8 0 10 -258113
+-1 -1 219;
+#X obj 698 366 hsl 50 50 0 50 0 0 Reggie Billy empty -2 -8 0 10 -4034
+-1 -1 4900 1;
+#X obj 402 238 receive Billy;
+#X obj 662 316 pipe 300;
+#X obj 36 269 pipe 50;
+#X obj 709 264 pipe 600;
+#X obj 157 373 pipe 75;
+#X obj 67 326 pipe 900;
+#X obj 295 423 vsl 100 128 0 127 0 0 empty empty empty 0 -9 0 10 -204800
+-1 -1 12700 1;
+#X obj 276 360 pipe 120;
+#X obj 536 653 env~;
+#X floatatom 540 685 5 0 0 0 - - -, f 5;
+#X obj 753 599 hsl 300 15 0 127 0 0 empty empty empty -2 -8 0 10 -261234
+-1 -1 29900 1;
+#X obj 782 543 receive Reggie;
+#X obj 780 571 pipe 1000;
+#X obj 451 418 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 435 336 receive Hasselhoff;
+#X obj 447 387 pipe 275;
+#X obj 293 21 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 645 498 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-45076 -262144 -1 219 256;
+#X obj 641 444 receive Hasselhoff;
+#X obj 643 472 pipe 90;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array array2 100 float 3;
+#A 0 0.234123 0.130513 0.0254551 -0.0798861 -0.184342 -0.286747 -0.38597
+-0.48091 -0.5705 -0.653768 -0.72976 -0.797657 -0.856698 -0.906214 -0.945689
+-0.974631 -0.99277 -0.999878 -0.995877 -0.980838 -0.954874 -0.91833
+-0.871576 -0.815145 -0.749672 -0.675855 -0.594549 -0.506629 -0.413088
+-0.314961 -0.213331 -0.109337 -0.0041256 0.10113 0.205264 0.307116
+0.405565 0.499497 0.587892 0.669755 0.744176 0.810351 0.867498 0.915033
+0.952396 0.979182 0.99511 0.99996 0.993731 0.976449 0.94833 0.909688
+0.860925 0.802623 0.735387 0.659996 0.577276 0.488138 0.39359 0.294658
+0.192462 0.0881261 -0.0171881 -0.122313 -0.226075 -0.327331 -0.42495
+-0.517848 -0.605004 -0.685425 -0.758251 -0.822643 -0.877904 -0.923426
+-0.958672 -0.983295 -0.996976 -0.999597 -0.991122 -0.971624 -0.94136
+-0.900615 -0.849884 -0.789713 -0.720766 -0.643831 -0.559723 -0.469414
+-0.373887 -0.274208 -0.171488 -0.0668582 0.0385116 0.143454 0.246802
+0.347414 0.444159 0.535983 0.621843 0.700803;
+#X coords 0 1 100 -1 200 140 1;
+#X restore 52 554 graph;
+#X obj 401 658 tabwrite~ array2;
+#X obj 407 608 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 396 565 pipe 300;
+#X obj 528 610 osc~;
+#X obj 532 569 mtof;
+#X obj 695 599 vsl 15 50 0 127 0 0 empty empty empty 0 -9 0 10 -262130
+-1 -1 4900 1;
+#X obj 693 569 pipe 20;
+#X obj 910 349 vradio 15 1 0 8 empty empty empty 0 -8 0 10 -99865 -4032
+-1 219;
+#X obj 878 290 pipe 400;
+#X text 338 149 The number box that controls everything.;
+#X connect 4 0 35 0;
+#X connect 6 0 7 0;
+#X connect 6 0 8 0;
+#X connect 6 0 9 0;
+#X connect 6 0 10 0;
+#X connect 6 0 11 0;
+#X connect 6 0 13 0;
+#X connect 7 0 5 0;
+#X connect 8 0 0 0;
+#X connect 9 0 4 0;
+#X connect 10 0 2 0;
+#X connect 11 0 3 0;
+#X connect 12 0 29 0;
+#X connect 13 0 12 0;
+#X connect 14 0 15 0;
+#X connect 17 0 18 0;
+#X connect 17 0 33 0;
+#X connect 18 0 16 0;
+#X connect 20 0 21 0;
+#X connect 21 0 19 0;
+#X connect 24 0 25 0;
+#X connect 25 0 23 0;
+#X connect 28 0 27 0;
+#X connect 29 0 31 0;
+#X connect 30 0 14 0;
+#X connect 30 0 27 0;
+#X connect 31 0 30 0;
+#X connect 33 0 32 0;
+#X connect 35 0 34 0;

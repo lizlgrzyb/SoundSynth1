@@ -1,0 +1,15 @@
+#N canvas 394 198 732 426 10;
+#X obj 125 75 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 127 121 delay 300;
+#X obj 131 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 154 85 This is a delay!;
+#X obj 289 122 delay 300;
+#X obj 276 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 258 173 You can have more than one at the same time!;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 4 0;
+#X connect 4 0 5 0;

@@ -1,0 +1,16 @@
+#N canvas 523 26 929 659 10;
+#X obj 503 588 adsr, f 35;
+#X obj 604 442 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 599 423 ATTACK;
+#X obj 749 526 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 745 504 RELEASE;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array durations 32 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 32 -1 200 140 1;
+#X restore 600 225 graph;
+#X connect 1 0 0 2;
+#X connect 3 0 0 5;

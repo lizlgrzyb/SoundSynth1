@@ -1,0 +1,16 @@
+#N canvas 308 224 274 231 10;
+#X obj 47 23 inlet;
+#X obj 105 23 inlet;
+#X obj 105 45 t b f;
+#X obj 47 45 t b f;
+#X msg 47 148 \; \$1 bounds \$2 \$3 \$4 \$5 \;;
+#X obj 47 108 pack s \$2 \$3 \$4 \$5;
+#X obj 47 77 symbol \$1;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 6 0;
+#X connect 2 1 5 3;
+#X connect 3 0 6 0;
+#X connect 3 1 5 2;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;

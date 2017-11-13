@@ -1,0 +1,26 @@
+#N canvas 356 137 690 412 10;
+#X obj 106 26 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 106 46 metro 1000;
+#X obj 66 115 random 100;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array loop_array 10 float 2;
+#X coords 0 0 10 100 200 140 1 0 0;
+#X restore 391 123 graph;
+#X obj 66 259 tabwrite loop_array;
+#X obj 221 115 f;
+#X obj 274 116 + 1;
+#X floatatom 221 156 5 0 0 0 - - -, f 5;
+#X obj 221 188 mod 10;
+#X floatatom 222 222 5 0 0 0 - - -, f 5;
+#X text 215 93 This loop is very common;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 5 0;
+#X connect 2 0 4 0;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 4 1;
