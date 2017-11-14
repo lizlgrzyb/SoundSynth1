@@ -1,4 +1,4 @@
-#N canvas 237 23 947 703 10;
+#N canvas 250 23 947 703 10;
 #X obj 191 546 *~;
 #X obj 192 582 dac~;
 #X floatatom 284 547 5 0 0 0 - - -, f 5;
@@ -178,11 +178,11 @@ normalize \;;
 #X obj 527 612 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 525 551 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 186 342 phasor~;
 #X text 525 589 Attack;
 #X text 522 531 Decay;
-#X obj 214 50 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 214 50 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 203 86 metro 100;
 #X obj 203 131 f;
